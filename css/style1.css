@@ -1,0 +1,90 @@
+*{
+	box-sizing: border-box; 
+	/* This makes the widths of elements more consistent
+		Full details here https://css-tricks.com/box-sizing/ */
+}
+
+body{
+	margin: 0px; /* Often browsers have a 5px margin by deafult*/
+	font-family: 'Quicksand', sans-serif;
+}
+
+section{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+header{
+	background-color: rgb(35, 128, 133);
+	color: white; /* more readable on an orange background */
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+nav a, nav h3{
+	float: right;
+	margin-top: -61px;
+	line-height: 60px;
+	margin-left: 1em;
+	margin-right: 1em;
+	text-decoration: none;
+}
+
+nav, a{
+	border: 1px  solid rgb(35, 128, 133);
+	padding-left: 7px;
+	padding-right: 7px;
+	background-color: rgb(35, 128, 133);
+	color: rgb(1,1,1);
+}
+
+
+nav a:hover{
+	text-decoration: underline; /* Hover styles to let people know they can click it */
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px rgb(1,1,1)
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .head {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .block-container1 {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: white;
+    padding: 10px;
+	grid-gap: 20px 500px;
+	margin-left: -100px;
+	width: 1170px;
+  }
+  
+.block-item6 {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+	width: 350px;
+
+  }
+
+  .block-item7 {
+    background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	width: 250px;
+  }

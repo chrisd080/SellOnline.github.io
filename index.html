@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Your Website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="js.js"> 
+
+	<!-- This is the file containing the important information for the jquery slideshow to run -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+	<section>
+		<img src = "img/logo.JPG" style="height: 100px; width: 300px">		
+
+		<nav>
+            <a href="index3.html">News and Awareness</a>
+			<a href="index2.html">Helpful videos and Articles</a>
+            <a href="index1.html">About</a>
+            <a href="index.html">Home</a>
+		</nav>
+	</section>
+
+
+<header>
+<section>
+		<!-- slideshow box and images -->
+<div id="slideshow">
+
+	<div>
+	  <img src="img/flow.jpg" style="width:1410px; height:479px; margin-left: -252px;"/>
+	</div>
+
+	<div>
+		<img src="img/shop.png" style="width:1410px; height:479px; margin-left: -252px;"/>
+	  </div>
+
+	  <div>
+		<img src="img/hack.jpg" style="width:1410px; height:479px; margin-left: -252px;"/>
+	  </div>
+	
+
+</div>
+
+ <!-- Setting for slideshow - must be included in index page as well as a linked file so the browser knows how and where to run the script-->
+<script>
+
+	$("#slideshow > div:gt(0)").hide();
+
+	setInterval(function() {
+	$('#slideshow > div:first')
+	.fadeOut(1000)
+	.next()
+	.fadeIn(1000)
+	.end()
+	.appendTo('#slideshow');
+	}, 3000);
+
+</script>
+
+</section>
+
+<br><br>
+
+<section>
+	<div class="block-container">
+		<div class="block-item">Tip #1
+			<hr>
+        <p>Dont be Fooled easily!! There are many scam online shopping websites out there that are eaily told apart from the real ones. Just the grammar, spelling, and typography of the website can be signals. </p>
+		</div>
+
+
+		<div class="block-item1">Tip #2
+		<hr>
+		<p>Pictures of products can appear real but if it looks fake it probably is. This is either due to unusual descriptions (or price) of products or an unusual appearance of the product on that particular website.</p>
+	</div>
+		
+		<div class="block-item2">Tip #3
+		<hr>
+		<p>The Url of the website is very obvious when its a fake. This can easily be identified through a shortened version or a bunch of added letters and unusual words included in the URL.</p>  
+	</div>
+</section>
+
+
+</header>
+
+<section>
+	<footer><div class="block-container1">
+		<div class="block-item6"><p>© 2020 Christian Dsouza</p>
+			<img src="img/Chris.jpg" style="height: 100px; width: 100px;">
+		</div>
+
+
+		<div class="block-item7"><p>Email: $ellOnline@dsouzchri.co.nz</p> 
+			<p>Phone: (04)232 6900</p><hr>
+		<p>Instagram: @$ellOnline</p></div></footer>
+</section>
+
+
+
+
+	
+</body>
+
+</html>
